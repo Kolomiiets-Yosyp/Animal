@@ -1,20 +1,16 @@
-public class Animal {
-    private String name;
+abstract public class Animal{
+    private String view;
     private String color;
-    public Animal(String name){
-        this.name=name;
-    }
-    public Animal(String name, String color){
-        this.name=name;
+    public Animal(String view, String color){
+        this.view =view;
         this.color=color;
     }
-    public void sayHello(){
-        System.out.println("Hi i'm "+ name+ " my color is "+ color);
-    }
+
+    public abstract void sayHello();
     public String getColor(){
         return color;
     }
-    public String getName(){
-        return name;
+    public String getView(){
+        return view;
     }
 }
