@@ -7,6 +7,15 @@ abstract public class Animal{
     }
 
     public abstract void sayHello();
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "view='" + view + '\'' +
+                ", color='" + color + '\'' +
+                '}';
+    }
+
     public String getColor(){
         return color;
     }
