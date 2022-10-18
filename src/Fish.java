@@ -1,6 +1,9 @@
 public class Fish extends Animal implements Eat{
+
+    private static int count= 0;
     public Fish(String view, String color) {
         super(view, color);
+        new Counter().setCount();
     }
 
     public class Inhabitat{
@@ -14,13 +17,6 @@ public class Fish extends Animal implements Eat{
         }
     }
 
-    class Entity{
-        private static int count= 0;
-
-        public Entity() {
-            new Counter().setCount();
-        }
-
         public static int getCount() {
             return count;
         }
@@ -30,7 +26,7 @@ public class Fish extends Animal implements Eat{
                 count =count+ 1;
             }
         }
-    }
+
     @Override
     public void sayHello() {
         System.out.println("Fish don`t say :) ");

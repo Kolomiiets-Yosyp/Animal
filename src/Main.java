@@ -11,6 +11,6 @@ public class Main {
 
         System.out.println("\n------------------------------");
 
-        System.out.println("Entity: "+ Fish.Entity.getCount());
+        System.out.println("Entity: "+ Fish.getCount());
     }
 }
