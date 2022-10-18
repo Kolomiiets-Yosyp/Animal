@@ -13,8 +13,9 @@ abstract public class Animal{
         return "Animal{" +
                 "view='" + view + '\'' +
                 ", color='" + color + '\'' +
-                '}';
+                '}'+ "\n";
     }
+
 
     public String getColor(){
         return color;
@@ -22,4 +23,7 @@ abstract public class Animal{
     public String getView(){
         return view;
     }
+
+
+
 }
